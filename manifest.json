@@ -1,0 +1,20 @@
+{
+  "vendor": "emeabesttemplatewhirlpool",
+  "name": "login-custom-flow",
+  "version": "0.0.1",
+  "title": "Custom Login",
+  "description": "Custom login with name and last name",
+  "defaultLocale": "pl-PL",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x"
+  },
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

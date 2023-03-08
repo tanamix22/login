@@ -1,0 +1,210 @@
+.formContainer {
+    min-height: 300px;
+    display: table;
+    max-width: 600px;
+    margin-top: 2rem;
+    margin-bottom: 80px;
+    @media (max-width: 1024px){
+      margin-top: 0;
+      margin-bottom: 52px;
+    }
+    :global(.vtex-checkbox__input){
+      height: 15px;
+      border: 1px solid #808080;
+      border-radius: 2px;
+      background: #FFFFFF;
+    }
+}
+@media screen and (max-width:680px) {
+  .formContainer {
+      padding: .5rem 1.5rem;
+  }
+}
+.confirmButton {
+    position:absolute;
+    top:-50px;
+    min-height: 40px;
+    border-radius: .25rem;
+    background-color: #fff;
+    font-weight: 500;
+    color: #edb112;
+    vertical-align: middle;
+    width:262px;
+    min-height: 2rem;
+    font-size: .875rem;
+    border: none;
+}
+.confirmButton:hover {
+  border: 1px solid #edb112;
+  font-weight: 700;
+
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.privacy {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.colorEdb112 {
+  margin: 0 0.2rem 0 0;
+  text-decoration: underline;
+}
+.informativa :global(.vtex-checkbox__label) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000000;
+}
+.infoContainer{
+    margin: 12px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    @media (max-width: 1024px){
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+    }
+}
+.back{
+    min-height: 40px;
+    cursor:pointer;
+    font-size: .875rem;
+    text-decoration:underline;
+    vertical-align: middle;
+    color: #edb112;
+}
+.inputContainer, .buttonContainer{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  :global(.vtex-button):hover{
+    color: #000;
+  }
+  :global(.vtex-button__label){
+    padding-bottom: 0 !important;
+  }
+  :global(.vtex-input-prefix__group){
+    border: 1px solid #E6E6E6;
+    border-radius: 2px;
+    :global(.vtex-styleguide-9-x-input){
+      height: 43px;
+      background: #FFFFFF;
+      padding: 9px 22px;
+      &::placeholder{
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.buttonContainerDisabled{
+  opacity: 1 !important;
+}
+.buttonContainer {
+  opacity: 0.60;
+  button{
+    width: 100%;
+    border-radius: 4px;
+    height: 42px;
+    text-transform: capitalize;
+    color: #000000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    background: #FFB32A;
+}
+}
+.registered{
+  color: red;
+  margin-right: .5rem;
+}
+.loaderForm {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  background: #edb112;
+  background: -moz-linear-gradient(
+    left,
+    #edb112 10%,
+    rgba(237, 177, 18, 0) 42%
+  );
+  background: -webkit-linear-gradient(
+    left,
+    #edb112 10%,
+    rgba(237, 177, 18, 0) 42%
+  );
+  background: -o-linear-gradient(left, #edb112 10%, rgba(237, 177, 18, 0) 42%);
+  background: -ms-linear-gradient(left, #edb112 10%, rgba(237, 177, 18, 0) 42%);
+  background: linear-gradient(to right, #edb112 10%, rgba(237, 177, 18, 0) 42%);
+  position: relative;
+  -webkit-animation: load3 1.4s infinite linear;
+  animation: load3 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+.loaderForm:before {
+  width: 50%;
+  height: 50%;
+  background: #edb112;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+.loaderForm:after {
+  background: #ffffff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
